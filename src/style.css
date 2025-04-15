@@ -1,3 +1,52 @@
 body {
   margin: 0;
+  background-color: rgba(103, 119, 131, 0.089);
+  
+}
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 40px;
+  background-color: #bb0e0e00;
+}
+.header img{
+min-height: 50px;
+}
+nav  {
+  flex-grow: 1;
+  margin-left: 40px;
+background-color: #fff;
+border: 2px solid blue;
+  
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding:0 ;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width:1200px ;
+ 
+
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  transition: color 0.3s ease;
+
+
+}
+nav a:hover {
+  color: #f0a500; /* cor de destaque ao passar o mouse */
+}
+a[href="#apple"],
+a[href="#laptops"] {
+  color: blue;
+  font-weight: bold;
 }
