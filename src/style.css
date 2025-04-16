@@ -1,35 +1,69 @@
+<<<<<<< HEAD
 header {
   max-width: 1200px;
   height: 60px; /* Unidade px está correta aqui */
+=======
+:root {
+  --color-blue: #00acdc;
+  --font-family-main: Roboto, Arial, sans-serif;
+}
+
+body {
+  font-family: var(--font-family-main);
+}
+
+.header {
+  max-width: 1200px;
+  height: 60px;
+>>>>>>> 968e4c5 (test)
   margin-top: 40px;
   display: flex;
   align-items: center;
   padding: 20px 40px;
   background: #fff;
+<<<<<<< HEAD
   box-shadow: 0 2px 4px 0 #0000000d; /* Removi as unidades desnecessárias no 0 */
   justify-content: space-evenly;
   border: 1px solid #00acdc;
+=======
+  box-shadow: 0 2px 4px 0 #0000000d;
+  justify-content: space-evenly;
+  border: 1px solid var(--color-blue);
+>>>>>>> 968e4c5 (test)
   margin-left: auto;
   margin-right: auto;
 }
 
-header img {
+.header__logo {
+  margin-right: 20px; /* Substitui gap com margin */
+}
+
+.logo__img {
   max-height: 50px;
 }
 
-nav ul {
+.nav__list {
   list-style: none;
   display: flex;
   margin: 0;
   padding: 0;
 }
 
+<<<<<<< HEAD
 nav a {
+=======
+.nav__item:not(:last-child) {
+  margin-right: 20px; /* Substitui gap */
+}
+
+.nav__link {
+>>>>>>> 968e4c5 (test)
   color: #000;
   text-decoration: none;
   font-weight: bold;
 }
 
+<<<<<<< HEAD
 nav a[href='#apple'],
 nav a[href='#laptops'] {
   color: #00acdc;
@@ -37,4 +71,13 @@ nav a[href='#laptops'] {
 
 a:hover {
   border-bottom: 2px solid #00acdc;
+=======
+.nav__link[href='#apple'],
+.nav__link[href='#laptops'] {
+  color: var(--color-blue);
+}
+
+.nav__link:hover {
+  border-bottom: 2px solid var(--color-blue);
+>>>>>>> 968e4c5 (test)
 }
