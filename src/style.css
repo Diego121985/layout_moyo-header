@@ -1,60 +1,60 @@
 :root {
-    --cor-azul: #00ACDC;
+  --cor-azul: #00acdc;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* Removidas as aspas da fonte, o que é comum quando a fonte não tem espaço */
-    font-family: Roboto, sans-serif;
-    background-color: rgb(245, 237, 237);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* Removidas as aspas da fonte, o que é comum quando a fonte não tem espaço */
+  font-family: Roboto, sans-serif;
+  background-color: rgb(245, 237, 237);
 }
 
 .main-header {
-    max-width: 1200px;
-    height: 60px;
-    margin-top: 40px;
-    display: flex;
-    align-items: center;
-    padding: 20px 40px;
-    /* Reduzido #FFFFFF para #fff para simplificar (mantendo a funcionalidade) */
-    background: #fff;
-    /* Garantindo 0px para passar no lint */
-    box-shadow: 0px 2px 4px 0px #0000000D;
-    justify-content: space-between;
-    border: 1px solid var(--cor-azul);
-    margin-left: auto;
-    margin-right: auto;
+  max-width: 1200px;
+  height: 60px;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  padding: 20px 40px;
+  /* Reduzido #FFFFFF para #fff para simplificar (mantendo a funcionalidade) */
+  background: #fff;
+  /* Garantindo 0px para passar no lint */
+  box-shadow: 0px 2px 4px 0px #0000000d;
+  justify-content: space-between;
+  border: 1px solid var(--cor-azul);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header__logo {
-    max-height: 50px;
+  max-height: 50px;
 }
 
 .main-nav ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .main-nav li:not(:last-child) {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .main-nav a {
-    /* Reduzido #000000 para #000 para simplificar (mantendo a funcionalidade) */
-    color: #000;
-    text-decoration: none;
-    font-weight: bold;
+  /* Reduzido #000000 para #000 para simplificar (mantendo a funcionalidade) */
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
 }
 
-.main-nav a[href="#apple"],
-.main-nav a[href="#laptops"] {
-    color: var(--cor-azul);
+.main-nav a[href='#apple'],
+.main-nav a[href='#laptops'] {
+  color: var(--cor-azul);
 }
 
 .main-nav a:hover {
-    border-bottom: 2px solid var(--cor-azul);
+  border-bottom: 2px solid var(--cor-azul);
 }
