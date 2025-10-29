@@ -25,6 +25,10 @@ body {
   margin-right: auto;
 }
 
+h1{
+  margin-left: 60px;
+}
+
 .header__logo {
   max-height: 50px;
 }
