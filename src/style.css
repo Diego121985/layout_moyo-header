@@ -37,13 +37,14 @@ body {
 }
 
 .main-nav li:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 32px;
 }
 
 .main-nav a {
   color: #000;
   text-decoration: none;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .main-nav a[href='#apple'],
@@ -53,4 +54,21 @@ body {
 
 .main-nav a:hover {
   border-bottom: 2px solid var(--cor-azul);
+  color: var(--cor-azul);
+}
+
+.main-nav a.is-active {
+  position: relative;
+  color: var(--cor-azul);
+}
+
+.main-nav a.is-active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4px; /* ajuste conforme o design */
+  height: 2px;
+  background: var(--cor-azul);
+  border-radius: 1px;
 }
