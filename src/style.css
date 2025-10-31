@@ -24,9 +24,6 @@ body {
   margin-right: auto;
 }
 
-h1{
-  margin-left: 60px;
-}
 
 .header__logo {
   max-height: 50px;
@@ -40,7 +37,7 @@ h1{
 }
 
 .main-nav li:not(:last-child) {
-  margin-right: 32px;
+  margin-right: 20px;
 }
 
 .main-nav a {
@@ -51,14 +48,14 @@ h1{
   text-transform: uppercase;
 }
 
-.main-nav a[href='#apple'],
-.main-nav a[href='#laptops'] {
+.is-active,
+.main-nav__link:hover {
   color: var(--cor-azul);
 }
 
 .main-nav a:hover {
   border-bottom: 2px solid var(--cor-azul);
-  color: var(--cor-azul);
+
 }
 
 .main-nav a.is-active {
@@ -69,10 +66,11 @@ h1{
 .main-nav a.is-active::after {
   content: "";
   position: absolute;
+  width: 100%;
   left: 0;
-  right: 0;
-  bottom: -4px; /* ajuste conforme o design */
-  height: 2px;
+  right: top;
+  bottom: 0; /* ajuste conforme o design */
+  height: 4px;
   background: var(--cor-azul);
-  border-radius: 1px;
+  border-radius: 4px;
 }
